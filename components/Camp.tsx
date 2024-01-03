@@ -33,12 +33,12 @@ const CampSite = ({
           <span className="flex -space-x-4 overflow-hidden">
             {PEOPLE_URL.map((url) => (
               <Image
-                key={url}
+                className="inline-block h-10 w-10 rounded-full"
                 src={url}
+                key={url}
                 alt="person"
                 width={52}
                 height={52}
-                className="inline-block h-10 w-10 rounded-full"
               />
             ))}
           </span>
@@ -48,6 +48,7 @@ const CampSite = ({
     </div>
   );
 };
+
 const Camp = () => {
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
@@ -59,10 +60,10 @@ const Camp = () => {
           peopleJoined="50+ Joined"
         />
         <CampSite
-          backgroundImage={"bg-bg-img-2"}
-          title={"Mountain View Camp"}
-          subtitle={"Somewhere in the Wilderness"}
-          peopleJoined={"50+ Joined"}
+          backgroundImage="bg-bg-img-2"
+          title="Mountain View Camp"
+          subtitle="Somewhere in the Wilderness"
+          peopleJoined="50+ Joined"
         />
       </div>
 
@@ -72,11 +73,10 @@ const Camp = () => {
             <strong>Feeling Lost</strong> And Not Knowing The Way?
           </h2>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-            Only with the hilink application you will no longer get lost and get
-            lost again, because we already support offline maps when there is no
-            internet connection in the field. Invite your friends, relatives and
-            friends to have fun in the wilderness through the valley and reach
-            the top of the mountain
+            Starting from the anxiety of the climbers when visiting a new
+            climbing location, the possibility of getting lost is very large.
+            That's why we are here for those of you who want to start an
+            adventure
           </p>
           <Image
             src="/quote.svg"
