@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       <div className="hero-map" />
 
-      <div className="relative z-20 flex flex--1 flex-col xl:w-1/2">
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
           src="/camp.svg"
           alt="camp"
@@ -44,7 +44,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex w-full gap-3 sm:flex-row">
+        <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
           <Button
             type="button"
@@ -68,11 +68,11 @@ const Hero = () => {
           <div className="flexBetween">
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 Mi</p>
+              <p className="bold-20 text-white">173.28 mi</p>
             </div>
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2 KM</p>
+              <p className="bold-20 text-white">2.040 km</p>
             </div>
           </div>
         </div>
